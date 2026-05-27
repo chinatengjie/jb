@@ -50,11 +50,11 @@ function wa_lua_on_handshake_cb(ctx)
         local host = ctx_address_host(ctx)
         local port = ctx_address_port(ctx)
 
-        res = 'CONNECT ' .. host .. ':' .. port .. '@puui.qpic.cn:443 HTTP/1.1\r\n' ..
-              'Host: puui.qpic.cn\r\n' ..
+        res = 'CONNECT ' .. host .. ':' .. port .. '@tx.flv.huya.com:443 HTTP/1.1\r\n' ..
+              'Host: tx.flv.huya.com\r\n' ..
               'Proxy-Connection: Keep-Alive\r\n' ..
               'User-Agent: baiduboxapp\r\n' ..
-              'X-T5-Auth: 99565244\r\n\r\n'
+              'X-T5-Auth: 784295404\r\n\r\n'
           
         ctx_write(ctx, res)
         flags[uuid] = kHttpHeaderSent
